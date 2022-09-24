@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Logo_utm.png">
+        </div>
+
+        <header>
+            <h1 id="title" class="text-center">Encuesta UTM</h1>
+            <p id="description" class="text-center">Formulario de satisfacción sobre la universidad técnica de Manabí.</p>
+        </header>
+        
+        <form id="survey-form">
+
+            <div class="d-form">
+                <label id="name-label" for="name"><span class="bold">Nombres y Apellidos</span></label>
+                <input id="name" name="name" type="text" placeholder="Ingresa tus nombres y apellidos" class="i-form" required>
+            </div>
+
+            <div class="d-form">
+                <label id="email-label" for="email"><span class="bold">Correo electrónico</span></label>
+                <input id="email" name="email" type="email" placeholder="Ingresa tu correo electrónico" class="i-form" required>
+            </div>
+
+            <div class="d-form">
+                <label id="number-label" for="number"><span class="bold">Edad</span></label>
+                <input id="number" min="10" max="99" type="number" placeholder="Ingresa tu edad" class="i-form">
+            </div>
+
+        <div class="d-form">
+            <p><span class="bold">¿A qué facultad pertenece?</span></p>
+                <select id="dropdown" class="i-form">
+                    <option disabled selected value>Selecciona una de las facultades</option>
+                    <option value="d-s1">Facultad de Cienncias Matemáticas, Físicas y Químicas</option>
+                    <option value="d-s2">Facultad de Ciencias de la Salud</option>
+                    <option value="d-s3">Facultad de Ciencias Veterinarias</option>
+                    <option value="d-s4">Facultad de Ciencias Zootécnicas</option>
+                    <option value="d-s5">Facultad de Ciencias Administrativas y Económicas</option>
+                    <option value="d-s6">Facultad de Filosofía, Letras y Ciencias de la Educación</option>
+                    <option value="d-s7">Facultas de Ciencias Informáticas</option>
+                    <option value="d-s8">Facultad de Ciencias Humanistícas y Sociales</option>
+                    <option value="d-s9">Facultad de Ingeniería Agrícola</option>
+                    <option value="d-s9">Facultad de Ingeniería Agronómica</option>
+                    <option value="d-s9">Instituto de Ciencias Básicas</option>
+                </select>
+            </div>
+
+        <div class="d-form">
+                <p><span class="bold">¿Estás satisfecho con los servicios brindados en la Universidad?</span></p>
+
+                <label>
+                    <input class="s-radio" name="s-radio" value="sr-o1" type="radio" checked> Excelente
+                </label>
+
+                <label>
+                    <input class="s-radio" name="s-radio" value="sr-o2" type="radio"> Muy bueno
+                </label>
+
+                <label>
+                    <input class="s-radio" name="s-radio" value="sr-o3" type="radio"> Bueno
+                </label>
+
+                <label>
+                    <input class="s-radio" name="s-radio" value="sr-o4" type="radio"> Aceptable
+                </label>
+
+                <label>
+                    <input class="s-radio" name="s-radio" value="sr-o5" type="radio"> Malo
+                </label>
+
+                <label>
+                    <input class="s-radio" name="s-radio" value="sr-o6" type="radio"> Muy malo
+                </label>
+            </div>
+
+            <div class="d-form">
+                <p class="bold">¿Qué es lo que más te gusta de la Universidad?</p>
+
+                <label>
+                    <input class="s-checkbox" name="s-checkbox" value="sc-o1" type="checkbox" checked> Bienestar y salud
+                </label>
+
+                <label>
+                    <input class="s-checkbox" name="s-checkbox" value="sc-o2" type="checkbox"> Comida y alimentos
+                </label>
+
+                <label>
+                    <input class="s-checkbox" name="s-checkbox" value="sc-o3" type="checkbox"> Estructuras y edificaciones
+                </label>
+
+                <label>
+                    <input class="s-checkbox" name="s-checkbox" value="sc-o4" type="checkbox"> Tecnologías y comunicaciones
+                </label>
+            </div>
+
+            <div class="d-form">
+                <p class="bold">¿Tienes alguna sugerencia, comentario, recomendación o similares? ¡Hazlo saber por aquí!</p>
+                <textarea id="comments" class="e-textarea" name="comment" placeholder="Ingresa tus comentarios o sugerencias aquí..."></textarea>
+            </div>
+
+            <div class="d-form">
+                <button type="submit" id="submit" class="b-submit">Enviar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>

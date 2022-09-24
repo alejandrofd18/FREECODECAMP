@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Personal Portfolio Webpage</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a5a65b39c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+
+  <header id="header-top">
+    <div class="htop">
+      <h3 class="h1-headert"><i class="uil uil-user"></i> Alejandro's Portfolio<h3>
+    </div>
+  </header>
+
+  <header id="header">
+  <nav id="navbar">
+    <div class="navbar-all">
+    <h3 class="titleport"><i class="uil uil-user"></i> Alejandro's Portfolio</h3>
+    <div class="nav-bar">
+    <ul class="nav-menu grid-nav">
+      <li>
+        <a id="home-link" class="nav-link selected" href="#welcome-section"><i class="uil uil-estate icon"></i> Home</a>
+      </li>
+      <li>
+        <a id="profile-link" class="nav-link" href="#tabout-me"><i class="uil uil-info-circle icon"></i> About</a>
+      </li>
+      <li>
+        <a id="profile-link" class="nav-link" href="#skills"><i class="uil uil-file-info-alt icon"></i> Skills</a>
+      </li>
+      <li>
+        <a id="projects-link" class="nav-link" href="#projects"><i class="uil uil-scenery icon"></i> Projects</a>
+      </li>
+      <li>
+        <a id="contact-link" class="nav-link" href="#contact-me"><i class="uil uil-at icon"></i> Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  </nav>
+</header>
+
+  <main id="main">
+    <div class="container">
+
+      <section id="welcome-section" class="about-section">
+      <div class="margin-top">
+        <div class="welcome-info">
+        <h1>Hi, I'm Alejandro Figueroa</h1>
+        <p>Web Developer</p>
+        <button>View more <i class="angle uil uil-angle-down"></i></button>
+      </div>
+        <img class="img-astronaut" src="media/astronaut.svg" alt="Astronaut">
+      </div>
+      </section>
+
+      <section id="about-me" class="about-me">
+        <header>
+        <h2 id="tabout-me">About me</h2>
+        <h3>Who I am?</h3>
+      </header>
+
+        <div class="about-container">
+          <img class="img-about" src="media/about.svg" alt="About me">
+          
+          <div class="about-description">
+            <p>My name is Alejandro Figueroa, I'm from Ecuador.<br><br>
+              
+            I am a passionate world of tecnnology and programation. I consider myself a person autodidatec, who loves learning about new things constantly. In this moments I'm i find myself studying industrial enginneria in University. <br><br>
+            
+            I'm currently learning about HTML & CSS. But, my next steps is learn Js. 
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+        <div class="skill-card">
+          <img id="htmll" class="logo-skill" src="media/htmll.svg" alt="HTML">
+          <div class="title-card"><h3>HTML</h3></div>
+        </div>
+
+        <div class="skill-card">
+          <img class="logo-skill cssl" src="media/cssl.svg" alt="HTML">
+          <div class="title-card"><h3>HTML</h3></div>
+        </div>
+        </div>
+        </section>
+
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-cards">
+
+          <a>
+          <div class="project">
+            <img class="project-img" src="https://cdn.discordapp.com/attachments/967900805405487105/1023022677679673494/p1.png" alt="">
+            <div class="project-title"><h3>Survey Form</h3></div>
+          </div>
+        </a>
+
+        <a>
+          <div class="project">
+            <img class="project-img" src="https://cdn.discordapp.com/attachments/967900805405487105/1023045276488974357/p2.png" alt="">
+            <div class="project-title"><h3>Product Landing</h3></div>
+          </div>
+        </a>
+
+        <a>
+          <div class="project">
+            <img class="project-img" src="https://cdn.discordapp.com/attachments/967900805405487105/1023044804755591168/p3.png" alt="">
+            <div class="project-title"><h3>React Documentation</h3></div>
+          </div>
+        </a>
+
+        <a>
+          <div class="project">
+            <img class="project-img" src="https://cdn.discordapp.com/attachments/967900805405487105/1023043706766508113/p4.png" alt="">
+            <div class="project-title"><h3>Tribute Page</h3></div>
+          </div>
+        </a>
+
+        </div>
+      </section>
+
+      <section id="certification" class="certification">
+        <h2>Certifications</h2>
+        <div class="certi-container">
+          <img src="media/certificado.png" alt="Certification Responsive Web Site">
+          <div><h3>Certification Responsive Web Site</h3></div>
+        </div>
+        </section>
+
+        <section id="contact-me" class="contact-me">
+          <h2>Contact me</h2>
+          <div class="contact-list">
+          <div class="contact-card">
+            <a href="#" target="_blank"><i class="iconc uil uil-facebook"></i> Facebook</a>
+          </div>
+          <div class="contact-card">
+            <a href="#" target="_blank"><i class="iconc uil uil-github"></i> GitHub</a>
+          </div>
+          <div class="contact-card">
+            <a href="#" target="_blank"><i class="iconc uil uil-instagram-alt"></i> Instagram</a>
+          </div>
+          <div class="contact-card">
+            <a href="#" target="_blank"><i class="iconc uil uil-discord"></i> Discord</a>
+          </div>
+          </div>
+          </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <p>Project freecodecamp - Responsive Web Site</p>
+      <p>© Created for Alejandro Figueroa</p>
+    </div>
+  </footer>
+</body>
+</html>

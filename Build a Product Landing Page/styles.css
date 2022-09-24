@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+:root {
+    --btn-color: #;
+    --color-primary: #AF0202;
+    --color-secundary: #DE4D05;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Source Sans Pro";
+    line-height: 1.2;
+}
+
+h1{font-size: 3rem;}
+h2{font-size: 2rem}
+h3{font-size: 1.2rem;}
+ul{list-style: none;}
+
+
+#hero{
+    background: linear-gradient(180deg, 
+  rgba(0, 0, 0, 1), 
+  rgba(255, 0, 0, 0.2)),
+  url(https://cdn.discordapp.com/attachments/967900805405487105/1017976542153932850/FONDO.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: right;
+    height: 95vh;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (min-width: 480px){
+    #hero{
+        padding: 5rem;
+    }
+
+    .title{
+        font-size: 5rem;
+    }
+
+    .description{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 720px){
+    #hero{
+        padding: 7rem;
+    }
+
+    .title{
+        font-size: 6rem;
+    }
+
+    .description{
+        font-size: 5rem;
+    }
+}
+
+.title, .description{
+    margin-bottom: 1.5rem;
+}
+
+#header-img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+header{
+    background: #000;
+    border: 1px solid #000;
+    margin: auto;
+}
+
+header #header-img{
+    margin: 0;
+    padding: 10px 10px;
+}
+
+header .nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+header a{
+    padding: 10px 20px;
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+    border-top: 2px solid #FFF;
+    margin: 0px 15px;
+}
+
+header a:hover{
+    animation: navbar 500ms forwards;
+}
+
+@keyframes navbar{
+    100%{
+        color: var(--color-primary);
+        border-top: 2px solid var(--color-primary);
+    }
+    
+}
+
+@media (min-width: 720px){
+    header .nav-bar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 200px;
+        background: #000;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 360px){
+    header .nav-bar{
+        padding: 0px 100px;
+        background: #000;
+    }
+}
+
+#container{
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+
+#p-features p{
+    text-align: justify;
+}
+
+@media(max-width: 0px){
+    #p-features h2{
+        text-align: center;
+    }
+
+    #p-features p{
+        text-align: justify;
+    }
+}
+
+@media(min-width: 720px){
+    #p-features p{
+        text-align: justify;
+    }
+}
+
+@media (min-width: 480px){
+#p-features, #menu{
+    margin: auto;
+    padding: 20px 30px;
+}
+}
+
+.features{
+    margin: 20px 25px;
+}
+
+@media (min-width: 720px){
+    .features{
+        margin-bottom: 35px;
+    }
+}
+
+.features h2{
+    margin-bottom: 5px;
+    color: var(--color-primary);
+}
+
+.menu{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.p-features{
+    margin: 0 auto;
+}
+
+.icon{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@media (min-width: 720px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px auto;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .p-features{
+        display: flex;
+    }
+
+    .icon{
+        padding: 0px 10px;
+        height: 50px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 720px){
+.menu:hover{
+    animation: menu 500ms forwards;
+}
+
+@keyframes menu{
+    100%{
+        box-shadow: 3px 3px 3px 3px gray;
+    }
+}
+}
+
+.title-menu, .title-video{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.title-2-menu{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.img-food{
+    object-fit: cover;
+}
+
+.card-img-menu{
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.food{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.menu h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.price{
+    font-size: 1.3rem;
+    color: green;
+    font-weight: 600px;
+    margin-right: 10px;
+}
+
+.btn{
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    height: 40px;
+}
+
+.btn:hover{
+    animation: btn 1s infinite;
+}
+
+@keyframes btn{
+    0%{
+        top: 0px;
+    }
+
+    50%{
+        width: 150px;
+    }
+
+    100%{
+        top: 0px;
+    }
+}
+
+#email-p{
+    background-color: var(--color-primary);
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#email-p h1{
+    margin-bottom: 20px;
+}
+
+.i-form{
+    height: 2.2rem;
+    color: #000 !important;
+    font-family: "Source Sans Pro";
+    border-radius: 2px;
+    border: 2px solid #FFF;
+    padding: 0.5rem;
+    background-color: #FFF !important;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 2px 2px var(--color-secundary);
+}
+
+@media(min-width: 0px){
+    .i-form{
+        width: 200px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media(min-width: 480px){
+    .i-form{
+        width: 300px;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+}
+
+.i-form:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      
+  }
+
+input{
+    margin: 1rem;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    
+}
+
+#submit{
+    margin: 10px auto;
+    height: 2.8rem;
+    border-radius: 5px;
+    border: solid green;
+    background-color: green;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+#submit:hover{
+    animation-name: submit;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes submit{
+    100%{
+        background-color: #FF8000;
+        border-color: #FF8000;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.25);
+        font-weight: bold;
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #000;
+    color: white;
+    padding: 50px;
+}
+
+#title-menu-principal{
+    margin: 0px 10px;
+}
+
+.btn-principal{
+    padding: 0 20px;
+    height: 2.5rem;
+    width: 200px;
+    background-color: var(--color-secundary);
+    border: 1px solid var(--color-secundary);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.btn-principal:hover{
+    animation: btn-p 500ms forwards;
+}
+
+@keyframes btn-p{
+    100%{
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        height: 2.6rem;
+        width: 225px;
+        box-shadow: 3px 3px 3px 3px;
+        font-size: 0.9rem;
+    }
+}
+
+#video-p{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+@media (min-width: 0px){
+    #video{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (min-width: 720px){
+    #video{
+        width: 500px;
+        height: 300px;
+    }
+}

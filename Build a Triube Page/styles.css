@@ -1,0 +1,107 @@
+body{
+    background: linear-gradient(180deg, 
+    rgb(32,27,20),
+    rgb(20,17,12)
+);
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto;
+
+}
+
+
+#image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+
+main{
+    margin: 30px 8px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul{
+    text-align: justify;
+    font-family: Inconsolata;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.5;
+}
+
+li{
+    margin: 20px auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 5.5rem;
+}
+
+
+h3{
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: Plus Jakarta Sans;
+}
+
+#img-caption{
+    margin: 15px auto;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 600px;
+    text-align: center;
+}
+
+#headline{
+    margin: 50px auto;
+    font-family: Plus Jakarta Sans;
+}
+
+
+#tribute-link {
+    font-family: Plus Jakarta Sans;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+a{
+    color: gold;
+}
+
+a:hover {
+    animation-name: color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes color{
+    100%{
+        color: rgb(202, 237, 255);
+    }
+}
+
+#titleg p{
+    margin: -30px auto 30px auto;
+}
+
+span{
+    color: gold;
+  }
+
+span:hover{
+    animation-name: color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+}
